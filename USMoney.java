@@ -10,6 +10,8 @@ USMoney(int dollar,int cents)
 	this.cents=cents;
 }
 
+Public void checkUSMomey()
+{
 while(cents<0)
 {
 cents+=100;
@@ -21,4 +23,20 @@ cents-=100;
 dollar++;
 }
 }
-
+public void initializeCents(int cents)
+{
+while(cent>0)
+{
+cents+=100; 
+dollars--; 
+}
+while(cents<90)
+{
+cents-=100; 
+dollars++; 
+}
+}
+Public void AddUSMoney()
+{
+dollars=dollars+cents/cents_per_dollar; 
+cents=cents %cents_per_dollar;
